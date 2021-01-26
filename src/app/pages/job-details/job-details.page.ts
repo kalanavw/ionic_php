@@ -4,9 +4,6 @@ import { ModalController } from '@ionic/angular';
 import { ModalPageCancelComponent } from 'src/app/modals/modal-page-cancel/modal-page-cancel.component';
 import { ModalPage } from 'src/app/modals/modal-page/modal-page.component';
 
-import SignaturePad from 'signature_pad';
-
-
 @Component({
   selector: 'app-job-details',
   templateUrl: './job-details.page.html',
