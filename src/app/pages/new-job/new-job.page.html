@@ -1,0 +1,136 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="bold">AUFTRAG</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    
+        <h5 class="bold">Adresse</h5>
+              <p>Max Mustermann<br>Teststr. 7<br>74348 Lauffen</p>
+              
+        <button class="btn btn-info">Navigation starten</button>
+              
+
+<p><br></p>
+
+
+        <h5 class="bold">Auftragsdetails</h5>
+        
+           
+            <div class="border">
+              Rohr im Badezimmer muss getauscht werden. Abfluss überprüfen. Alles dokumentieren.
+            </div>
+          
+          
+<p><br></p>
+
+
+        <h5 class="bold">Materialliste</h5>
+        
+            <div class="border">
+                AB Schraube 13
+                <br>
+                Induktionslinse
+                <br>
+                <button class="btn btn-info">+</button>
+              </div>
+                         
+      <p><br></p>
+    
+    
+      <h5 class="bold">Dokumentation</h5>
+      
+          <button class="btn btn-info">Foto erfassen</button>
+
+    <div class="form-check">
+      <label class="form-check-label">
+        <input class="form-check-input" type="checkbox">
+        <span class="form-check-sign"></span>
+        Unterschrift Kunde notwendig
+      </label>
+    </div>
+
+
+        
+<p><br></p>
+
+
+      <h5 class="bold">Notizen</h5>
+      
+          <div class="border">
+                <textarea class="form-control" aria-label="With textarea"></textarea> 
+          </div>
+        
+        
+        
+<p><br></p>
+
+
+      <h5 class="bold">Notizen (intern)</h5>
+      
+          <div class="border">
+                <textarea class="form-control" aria-label="With textarea"></textarea> 
+          </div>
+     
+     
+<p><br></p>
+        
+        
+    <h5 class="bold">Arbeitszeit</h5>
+    <div class="row">
+      <div class="col-sm-1 col-lg-3">
+      <a style="color: black;">von</a>
+      </div> 
+      <div class="col-sm-1 col-lg-3">
+        <div class="datepicker-container">
+          <div class="form-group">
+            <ion-datetime class="form-control date-picker" displayFormat="MM/DD/YYYY" [(ngModel)]="date_from" (ngModelChange)="CalcDuration()"></ion-datetime>
+                  
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-1 col-lg-3">
+      <button class="btn btn-info" (click)="SetNow('date_from')">Jetzt</button>   
+      </div> 
+      
+    </div>       
+    
+    
+    
+      <div class="row">
+      <div class="col-sm-1 col-lg-3">
+      <a style="color: black;">bis</a>
+      </div> 
+      <div class="col-sm-6 col-lg-3">
+        <div class="datepicker-container">
+          <div class="form-group">
+            <ion-datetime class="form-control date-picker" displayFormat="MM/DD/YYYY" [(ngModel)]="date_to" (ngModelChange)="CalcDuration()"></ion-datetime>
+                  
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-1 col-lg-3">
+      <button class="btn btn-info" (click)="SetNow('date_to')">Jetzt</button>   
+      </div> 
+      
+    </div>    
+    
+  <p>= {{duration}}</p>
+  
+
+
+
+<p><br></p>
+      <button class="btn btn-danger" data-toggle="modal" data-target="#myModalAuftragAbbrechen" (click)="presentModal('cancel')">Auftrag abbrechen</button>
+          <p></p>
+
+    <button class="btn btn-success" data-toggle="modal" data-target="#myModalAuftragAbschliessen" (click)="presentModal('success')">
+      Auftrag abschließen
+    </button>
+
+  </div>
+</ion-content>

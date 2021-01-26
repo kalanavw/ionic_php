@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 1
+    <ion-title class="bold">
+      START
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,9 +9,29 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
+      <ion-title size="large">START</ion-title>
     </ion-toolbar>
   </ion-header>
+  
+  <div class="container">
+   <br>         
+  <p> <i class="now-ui-icons users_circle-08"></i> Herr Max Mustermann</p>
+  <p> <i class="now-ui-icons shopping_delivery-fast"></i> HN-AB 557</p>
+  <button class="btn btn-info">Wechseln</button>
+  <p><br></p>
+                        
+  <p> <i class="now-ui-icons travel_info"></i> Status: Pause</p>
+  <button class="btn btn-info">Ändern</button>
+  <p><br></p>
+  
+  <p> <i class="now-ui-icons loader_refresh"></i> Letzte Aktualisierung: 14:32</p>
+  <button class="btn btn-info">Aktualisierung starten</button>
+  
+  <p><br></p>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <button class="btn-lg btn-info" style="color: white;" routerLink="/tabs/jobs" routerDirection="root">Offene Aufträge anzeigen ({{jobsNumber}})</button>
+  <p></p>
+  <button class="btn-lg btn-info" style="color: white;" routerLink="/settings" routerDirection="root">Einstellungen</button>
+
+</div>
 </ion-content>

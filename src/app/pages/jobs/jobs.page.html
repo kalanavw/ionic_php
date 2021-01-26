@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="bold">AUFTRÄGE</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+  <br>
+  <ion-datetime class="form-control date-picker" displayFormat="MM/DD/YYYY" value="{{date}}"></ion-datetime>
+    <ul class="list-group">
+      <li class="list-group-item">Herr Max Mustermann><br>Teststr. 7<br>74348 Lauffen</li>
+      <li class="list-group-item">Frau Erika Musterfrau<br>An der Teststr. 14<br>12345 Musterhausen</li>        
+      <li class="list-group-item">Herr Jakob Eismann<br>Postplatz 16<br>74348 Lauffen</li>
+      <li class="list-group-item">Frau Tamara Musterfrau<br>Wohnort 18<br>12345 Musterhausen</li>
+      <li class="list-group-item">{{firstName}} {{lastName}}<br>{{street}} {{streetNumber}}<br>{{postal}} {{city}}</li>
+    </ul>
+  </div>
+</ion-content>

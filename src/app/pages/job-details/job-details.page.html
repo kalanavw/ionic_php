@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="bold">AUFTRAGSDETAILS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="container">
+        
+  <h5 class="bold">Adresse</h5>
+  <p>Max Mustermann<br>Teststr. 7<br>74348 Lauffen</p>
+  
+  
+
+<p><br></p>
+
+<h5 class="bold">Auftragsdetails</h5>
+  <p>Rohr im Badezimmer muss getauscht werden. Abfluss überprüfen. Alles dokumentieren.</p>
+  
+  
+
+<p><br></p>    
+
+<h5 class="bold">Materialliste</h5>
+  <p>AB Schraube 13<br>Induktionslinse </p>
+  
+  
+
+<p><br></p>      
+
+<h5 class="bold">Dokumentation</h5>
+  <p>2 Fotos erfasst:<br>1723.jpg<br>1724.jpg</p>
+  
+  
+
+<p><br></p>    
+
+<h5 class="bold">Notizen</h5>
+  <p>(keine Notizen erfasst)</p>
+  
+  
+
+<p><br></p>    
+
+<h5 class="bold">Notizen (intern)</h5>
+  <p>(keine internen Notizen erfasst)</p>
+  
+  
+
+<p><br></p>       
+
+<h5 class="bold">Arbeitszeit</h5>
+  <p>Arbeitsbeginn: 15:23 Uhr<br>Arbeitsende: 16:25 Uhr<br>Arbeitszeit: 1 Std. 2 Min.</p>
+  
+  
+
+<p><br></p>    
+
+<h5 class="bold">Unterschrift erfassen</h5>
+<blockquote>
+<p class="blockquote blockquote-primary">
+  <canvas class="signature-pad-canvas" #canvas width="900" height="400" style="touch-action: none;"></canvas>
+  <small>
+    UNTERSCHRIFTENFELD
+  </small>
+</p>
+</blockquote>
+
+<p><br></p>
+<button class="btn btn-danger" data-toggle="modal" data-target="#myModalAuftragAbbrechen" (click)="presentModal('cancel')">Auftrag bearbeiten</button>
+    <p></p>
+
+<button class="btn btn-success" data-toggle="modal" data-target="#myModalAuftragAbschliessen" (click)="presentModal('success')">
+Auftrag abschließen
+</button>
+
+</div>
+</ion-content>

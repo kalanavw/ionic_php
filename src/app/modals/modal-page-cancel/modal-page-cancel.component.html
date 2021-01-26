@@ -1,0 +1,21 @@
+
+<!-- Mini Modal -->
+<div class="modal fade modal-info" id="myModalAuftragAbbrechen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-profile">
+          <i class="now-ui-icons ui-1_simple-remove"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <p>{{text}}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal" (click)="dismiss(false)">{{fail_btn}}</button>
+        <button type="button" class="btn btn-link btn-neutral" data-dismiss="modal" (click)="dismiss(true)">{{success_btn}}</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!--  End Modal -->
