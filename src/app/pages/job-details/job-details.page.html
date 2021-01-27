@@ -58,14 +58,12 @@
 <p><br></p>    
 
 <h5 class="bold">Unterschrift erfassen</h5>
-<blockquote>
-<p class="blockquote blockquote-primary">
-  <canvas class="signature-pad-canvas" #canvas width="900" height="400" style="touch-action: none;"></canvas>
+<div class="border">
+  <canvas class="signature-pad-canvas" #canvas  style="touch-action: none;"></canvas>
   <small>
     UNTERSCHRIFTENFELD
   </small>
-</p>
-</blockquote>
+</div>
 
 <p><br></p>
 <button class="btn btn-danger" data-toggle="modal" data-target="#myModalAuftragAbbrechen" (click)="presentModal('cancel')">Auftrag bearbeiten</button>

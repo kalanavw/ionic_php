@@ -1,5 +1,7 @@
 {
   "name": "kidVisual",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

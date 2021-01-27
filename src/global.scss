@@ -99,3 +99,20 @@
   .modal-wrapper{
     background: transparent !important;
 }
+
+textarea{
+  --border-bottom-color: $info-color; // valid underline color
+}
+.border{
+  border-left: none;
+  border: 1px solid #2CA8FF;
+  padding: 20px;
+  font-size:  1.1em;
+  line-height: 1.8;
+
+  small{
+    color: $info-color;
+    text-transform: uppercase;
+    font-size: 0.8571em;
+  }
+}
