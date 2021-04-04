@@ -21,7 +21,7 @@ export class HttpService {
   constructor(
     private httpClient: HttpClient
   ) {
-    this.serviceUrl = 'http://localhost:8080/hrate';
+    this.serviceUrl = 'http://localhost:8000';
   }
 
   get(endPoint: string, urlParams?: string | any, header?: NameCodePair[]): Observable<EsResponse> {
