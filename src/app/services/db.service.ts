@@ -68,18 +68,22 @@ export class DbService {
     }
 
     private loadVehicles() {
-        this.storage.executeSql("SELECT * FROM vehicle", []).then(res => {
+        this.storage.executeSql('SELECT * FROM vehicle', []).then(res => {
             console.log(res);
 
             const tmp = [];
             for (let i = 0; i < res.rows.length; i++) {
-                tmp.push({ id: res.rows.item(i).id, createdAt: res.rows.item(i).createdAt, title: res.rows.item(i).title, isDone: res.rows.item(i).isDone })
+                tmp.push({
+                    id: res.rows.item(i).id,
+                    createdAt: res.rows.item(i).createdAt,
+                    title: res.rows.item(i).title,
+                    isDone: res.rows.item(i).isDone
+                });
             }
-            this.todos = tmp;
-            console.log(this.todos);
-
+            this.vehicles = tmp;
+            console.log(this.vehicles);
         }).catch(() => {
-            console.log("READ ERROR");
-        })
+            console.log('READ ERROR');
+        });
     }
 }
